@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boxLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <com.caroliengilbers.diceroller.SnapScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/diceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/d20View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d20"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/d12View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d12"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/d10View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d10"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/d8View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d8"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/d6View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d6"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+
+            <com.caroliengilbers.diceroller.DynamicSquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/d4View"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d4"
+                    android:backgroundTint="#4D000000"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </com.caroliengilbers.diceroller.DynamicSquareLayout>
+        </LinearLayout>
+    </com.caroliengilbers.diceroller.SnapScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>
